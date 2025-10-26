@@ -1,5 +1,5 @@
 # Берём официальный Nginx
-FROM nginx:1.29.1
+FROM docker.io/nginx:alpine
 
 # Копируем файлы проекта в папку для Nginx
 COPY ./ /usr/share/nginx/html
