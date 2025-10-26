@@ -50,14 +50,19 @@ form.addEventListener('submit', async (e) => {
 
     const formData = new FormData();
     for (let i = 0; i < files.length; i++) {
-    formData.append('images', files[i]);
-    }
+      formData.append('images', files[i]);
+      }
+    const token = localStorage.getItem('access_token');
 
     try {
     const response = await fetch('http://109.69.18.107:8000/api/v1/emotions/analyze/', {
-        method: 'POST',
-        body: formData
+      method: 'POST',
+      headers: {
+          'Authorization': `Bearer ${token}`
+      },
+      body: formData
     });
+
 
     if (!response.ok) throw new Error('Network response was not ok');
 
