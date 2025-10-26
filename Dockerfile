@@ -1,5 +1,5 @@
 # Берём официальный Nginx
-FROM nginx:alpine
+FROM nginx:1.29.1
 
 # Копируем файлы проекта в папку для Nginx
 COPY ./ /usr/share/nginx/html
