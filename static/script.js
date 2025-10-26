@@ -62,11 +62,14 @@ form.addEventListener('submit', async (e) => {
       },
       body: formData
     });
+    const data = await response.json()
+        if (!response.ok) {
+        console.error('Error response:', data); // сервер прислал ошибку
+        resultsDiv.innerHTML = `<div class="analyzing">Error: ${JSON.stringify(data)}</div>`;
+        return; // дальше не идём
+    }
 
-
-    if (!response.ok) throw new Error('Network response was not ok');
-
-    const data = await response.json();
+    // const data = await response.text();
     resultsDiv.innerHTML = '';
 
     const results = Array.isArray(data.result) ? data.result : [data.result];
@@ -132,6 +135,6 @@ form.addEventListener('submit', async (e) => {
     }
 
     } catch (error) {
-    resultsDiv.innerHTML = `<div class="analyzing">Error: ${error.message}</div>`;
+    resultsDiv.innerHTML = `<div class="analyzing">${error.message}</div>`;
     }
 });
