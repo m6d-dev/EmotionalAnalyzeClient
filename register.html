@@ -29,7 +29,7 @@ form.addEventListener('submit', async (e) => {
   msg.style.color = '#000';
 
   try {
-    const res = await fetch('http://127.0.0.1:8000/api/v1/accounts/register/', {
+    const res = await fetch('http://109.69.18.107:8000/api/v1/accounts/register/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -54,7 +54,7 @@ form.addEventListener('submit', async (e) => {
     }
 
     try {
-    const response = await fetch('http://127.0.0.1:8000/api/v1/emotions/analyze/', {
+    const response = await fetch('http://109.69.18.107:8000/api/v1/emotions/analyze/', {
         method: 'POST',
         body: formData
     });

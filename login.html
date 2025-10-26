@@ -27,7 +27,7 @@
       msg.textContent = 'Authenticating...';
 
       try {
-        const res = await fetch('http://127.0.0.1:8000/api/v1/accounts/login/', {
+        const res = await fetch('http://109.69.18.107:8000/api/v1/accounts/login/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
