@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Emotion Analyzer</title>
+  <link rel="stylesheet" href="static/auth.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h1>Join the <span>Emotion Analyzer</span></h1>
+    <form id="registerForm">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+      <p class="switch">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+    <div id="registerMessage" class="msg"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('registerForm');
+    const msg = document.getElementById('registerMessage');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  msg.textContent = 'Creating your account...';
+  msg.style.color = '#000';
+
+  try {
+    const res = await fetch('http://127.0.0.1:8000/api/v1/accounts/register/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: form.username.value,
+          email: form.email.value,
+          password: form.password.value
+        })
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        console.log(data);
+        let errorText = '';
+
+        for (const field in data) {
+          errorText += `${field}: ${data[field].join(', ')}\n`;
+        }
+
+        throw new Error(errorText.trim());
+      }
+
+      msg.textContent = '✅ Registered successfully! Redirecting to login...';
+      msg.style.color = '#4caf50';
+      form.reset();
+
+      setTimeout(() => {
+        window.location.href = '/login.html';
+      }, 2000);
+
+    } catch (err) {
+      msg.textContent = '❌ ' + err.message;
+      msg.style.color = '#f44336';
+    }
+  });
+  </script>
+  <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+{
+  "editor.fontSize": 16,
+  "editor.tabSize": 4,
+  "editor.cursorStyle": "underline",
+  "editor.renderWhitespace": "all",
+  "editor.letterSpacing": 1,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.rulers": [
+    100
+  ],
+  "editor.tabMovesFocus": true,
+  "diffEditor.experimental.showMoves": true,
+  "editor.tokenColorCustomizations": {
+    "[GitHub Light Colorblind (Beta)]": {
+      "functions": "#ff0000"
+    },
+    "[GitHub Dark Colorblind (Beta)]": {
+      "comments": "#00ff00",
+      "functions": "#bbff00",
+      "keywords": "#ff00ff",
+      "numbers": "#ffff00",
+      "strings": "#00ff00",
+      "types": "#00fff7",
+      "variables": "#ab03ff"
+    },
+    "textMateRules": [
+      {
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "variable"
+        ],
+        "settings": {
+          "foreground": "#00ff11"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical.python",
+          "keyword.operator.arithmetic.python"
+        ],
+        "settings": {
+          "foreground": "#ff0000"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter.class",
+          "variable.parameter.instance",
+          "variable.parameter.function",
+          "variable.other.instance.python"
+        ],
+        "settings": {
+          "foreground": "#ff0000"
+        }
+      },
+      {
+        "scope": [
+          "variable.other.readwrite"
+        ],
+        "settings": {
+          "foreground": "#009ffb"
+        }
+      },
+      {
+        "scope": [
+          "variable.language.self.python"
+        ],
+        "settings": {
+          "foreground": "#8000ff"
+        }
+      }
+    ],
+    "editor.tokenColorCustomizations": {
+      "[GitHub Dark Colorblind (Beta)]": {
+        "comments": "#00ff00",
+        "functions": "#ff0000",
+        "keywords": "#ff00ff",
+        "numbers": "#ffff00",
+        "strings": "#00ff00",
+        "types": "#00ffff",
+        "variables": "#ff00ff"
+      }
+    }
+  },
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Default Dark Modern",
+  "editor.fontWeight": "900",
+  "editor.accessibilityPageSize": 15,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "mizu",
+  "git.openRepositoryInParentFolders": "never",
+  "cSpell.userWords": [
+    "aggr",
+    "anbor",
+    "APIKEY",
+    "ASGI",
+    "asposecells",
+    "authed",
+    "autouse",
+    "Browsable",
+    "CERTBOT",
+    "Chrono",
+    "Companytable",
+    "cooldown",
+    "corsheaders",
+    "counterparties",
+    "Counterparty",
+    "CRUDAPI",
+    "ctps",
+    "datetime",
+    "Deactivable",
+    "dialcode",
+    "djangorestframework",
+    "dotenv",
+    "Dtos",
+    "Ecommerce",
+    "exel",
+    "Exponentiate",
+    "Muhammad",
+    "gruzia",
+    "Hmac",
+    "itemsm",
+    "keyscan",
+    "letsencrypt",
+    "moysklad",
+    "ngrams",
+    "Nigers",
+    "Npgsql",
+    "openpyxl",
+    "OUTCOMING",
+    "Permalinkable",
+    "privkey",
+    "productfolder",
+    "Protobuf",
+    "Protos",
+    "Redoc",
+    "registrating",
+    "simplejwt",
+    "Sklad",
+    "staffmemberprofile",
+    "subtable",
+    "subtables",
+    "suser",
+    "tablefmt",
+    "Throwed",
+    "Timestampble",
+    "TORM",
+    "viewset",
+    "viewsets",
+    "xlsxwriter",
+    "ГГГГ",
+    "дирам",
+    "Общие",
+    "Описание",
+    "подкатегорией",
+    "сериализатор",
+    "сериализатора",
+    "Сомони"
+  ],
+  "projectManager.sortList": "Path",
+  "cSpell.language": "en,ru",
+  "window.customTitleBarVisibility": "auto",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "top",
+  "python.languageServer": "Pylance",
+  "python.missingPackage.severity": "Error",
+  "settingsSync.ignoredExtensions": [],
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.startupEditor": "none",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "gitlens.outputLevel": "error",
+  "deepl.formality": "default",
+  "deepl.tagHandling": "off",
+  "deepl.splitSentences": "1",
+  "deepl.translationMode": "Replace",
+  "workbench.editorAssociations": {
+    "{git,gitlens}:/**/*.{md,csv,svg}": "default"
+  },
+  "vscode-office.openOutline": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "files.exclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "files.watcherExclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "terminal.integrated.fontSize": 16,
+  "hexeditor.columnWidth": 32,
+  "hexeditor.showDecodedText": false,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "indentRainbow.includedLanguages": [
+    "python"
+  ],
+  "indentRainbow.updateDelay": 10,
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+  "editor.defaultFormatter": "trunk.io",
+  "python.createEnvironment.trigger": "off",
+  "launch": {
+    "configurations": []
+  },
+  "git-graph.keyboardShortcut.find": "UNASSIGNED",
+  "git-graph.keyboardShortcut.refresh": "UNASSIGNED",
+  "git-graph.keyboardShortcut.scrollToHead": "UNASSIGNED",
+  "git-graph.keyboardShortcut.scrollToStash": "UNASSIGNED",
+  "security.promptForLocalFileProtocolHandling": false,
+  "python.defaultInterpreterPath": "/Users/fakhriddin3040/Developement/Dev-Tools/pyenv/versions/3.12.3/envs/common",
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "/*-stage.yml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "git.confirmSync": false,
+  "python.analysis.autoImportCompletions": true,
+  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cppCompilerPath": "g++",
+  "C_Cpp_Runner.debuggerPath": "gdb",
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wformat=2",
+    "-Wcast-align",
+    "-Wconversion",
+    "-Wsign-conversion",
+    "-Wnull-dereference"
+  ],
+  "C_Cpp_Runner.msvcWarnings": [
+    "/W4",
+    "/permissive-",
+    "/w14242",
+    "/w14287",
+    "/w14296",
+    "/w14311",
+    "/w14826",
+    "/w44062",
+    "/w44242",
+    "/w14905",
+    "/w14906",
+    "/w14263",
+    "/w44265",
+    "/w14928"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "C_Cpp_Runner.useAddressSanitizer": false,
+  "C_Cpp_Runner.useUndefinedSanitizer": false,
+  "C_Cpp_Runner.useLeakSanitizer": false,
+  "C_Cpp_Runner.showCompilationTime": false,
+  "C_Cpp_Runner.useLinkTimeOptimization": false,
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 0 0 10px #6200ea;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+input[type="file"] {
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    padding: 12px;
+    background: #6200ea;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+}
+
+.results {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.result-item {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(98,0,234,0.5);
+    flex: 1 1 250px;
+    transition: transform 0.2s;
+}
+
+.result-item:hover {
+    transform: translateY(-5px);
+}
+
+.result-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.dominant {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffeb3b;
+    margin-bottom: 15px;
+}
+
+.emotions {
+    text-align: left;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.emotion-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emotion-name {
+    width: 70px;
+    text-transform: capitalize;
+}
+
+.bar-container {
+    flex: 1;
+    height: 14px;
+    background: #333;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 7px;
+}
+
+.percent {
+    width: 50px;
+    text-align: right;
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+.analyzing {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #bbb;
+}
+
+.error {
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 10px;
+}
